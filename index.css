@@ -1,0 +1,111 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(87, 87, 87);
+    color: white;
+}
+
+.itemMenu{
+    display: block;
+}
+
+#seccion1{
+    color: white;
+    background-image: url("./images/ba1.jpg");
+    background-position: center;
+    min-height: 500px;
+    text-align: right;
+    padding: 10%;
+}
+
+#seccionOradores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.cartasOradores{
+    padding: 1% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.carta{
+    margin: 0% 5%;
+}
+
+#seccionFoto{
+    display: flex;
+    flex-direction: row;
+}
+
+#imagenFoto{
+    background-image: url('./images/honolulu.jpg');
+
+    background-size: cover;
+    /* La imagen estara centrada */
+    background-position: center;
+    width: 100vw;
+    height: 500px;
+
+}
+
+#textoImagen{
+    color: white;
+    background-color: rgb(87, 87, 87);
+    padding: 1%;
+}
+
+#seccionFormulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.formulario{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
+    grid-template-areas: "nombre apellido"
+    "tema tema"
+    "comentario comentario"
+    "boton boton";
+    grid-gap: 1%;
+}
+
+#nombre{
+    grid-area: nombre;
+
+}
+#apellido{
+    grid-area: apellido;
+
+}
+#tema{
+    grid-area: tema;
+
+}
+#comentario{
+    grid-area: comentario;
+    
+}
+#boton{
+    grid-area: boton;
+    color: white;
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 5%;
+
+}
